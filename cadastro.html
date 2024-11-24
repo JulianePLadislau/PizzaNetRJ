@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('img/fundo-login.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+
+    <div class="form-container-wrapper">
+        <div class="form-container">
+            <h2>Cadastro</h2>
+            <form id="registration-form">
+                <div class="input-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" required minlength="15" placeholder="Nome Completo">
+                    <small id="name-error" class="error-message">O nome deve ter no mínimo 15 caracteres.</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+                    <small id="email-error" class="error-message">Por favor, insira um e-mail válido.</small>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Celular</label>
+                    <input type="text" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
+                    <span id="phone-error" style="visibility: hidden; color: red;">Número de celular inválido. O formato correto é (XX) XXXXX-XXXX.</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required minlength="6" placeholder="Senha">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Repetir Senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required minlength="6" placeholder="Repetir Senha">
+                    <small id="password-error" class="error-message">As senhas não coincidem.</small>
+                </div>
+
+                <button type="submit" class="btn-login">Cadastrar</button>
+
+                <!-- Mensagem de erro geral -->
+                <p class="error-message" id="form-error">Erro no cadastro, verifique os campos.</p>
+
+                <!-- Links -->
+                <div class="login-options">
+                    <a href="login.html" class="login-link">Já tem conta? Faça login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

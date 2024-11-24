@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('img/fundo-login.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+
+    <div class="login-container-wrapper">
+        <div class="login-container">
+            <h2 id="login">Login</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="login-email">E-mail</label>
+                    <input type="email" id="login-email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Senha</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Entrar</button>
+
+                <!-- Mensagem de erro -->
+                <p id="error-message" class="error-message" style="display: none;">Usuário ou senha inválidos</p>
+
+                <!-- Links para "Esqueceu a senha?" e "Cadastre-se" -->
+                <div class="login-options">
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    <span>|</span>
+                    <a href="cadastro.html" class="signup">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

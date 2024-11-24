@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza NetRJ</title>
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!--Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Pizza NetRJ</a>
+
+            <!-- Botão de Toggle (exibido somente em telas menores) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Itens da Navbar (links) -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobrenos">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cardapio">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mapa">Endereço</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mapa">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Botão de ícone de usuário com fundo amarelo -->
+                <a href="login.html" class="btn btn-warning ms-3">
+                    <i class="bi bi-person"></i>
+                </a>
+                
+            </div>
+        </div>
+    </nav>
+
+
+    <!--apresentação pizzaria-->
+    <section class="first-section" id="home">
+        <div class="conteudo-principal">
+            <h1>Deixe sua noite mais saborosa!!!</h1>
+            <h2>Delicie-se com as pizzas mais recheadas da Região</h2>
+            <div class="btn-pizza">
+                <a href="https://wa.me/5511XXXXXXXXX?text=Olá,%20gostaria%20de%20reservar%20uma%20pizza!" target="_blank">
+                    <button class="reservar">Reserve a sua!</button>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--sobre nos-->
+    <section class="sobre-nos" id="sobrenos">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Texto "Sobre Nós" -->
+                <div class="col-lg-6 col-md-12 contentsobre">
+                    <h2 class="title">Sobre nós</h2>
+                    <p class="description">
+                        Bem-vindo à PizzaNetRJ! Desde 1987, nós da PizzaNetRJ temos nos dedicado a trazer o verdadeiro
+                        sabor da Itália para a sua mesa.
+                        Localizada na Tijuca, nossa pizzaria é o lugar onde a tradição encontra a modernidade, criando
+                        um ambiente aconchegante e familiar
+                        para todos que amam uma boa pizza.
+                    </p>
+                    <p class="description">
+                        Nossa missão é simples: oferecer a você uma experiência culinária inesquecível, utilizando
+                        apenas os ingredientes mais frescos e de alta qualidade.
+                        Todas as nossas pizzas são preparadas artesanalmente, seguindo receitas tradicionais, mas com um
+                        toque especial que só você encontra aqui.
+                    </p>
+                    <p class="description">
+                        Aqui na PizzaNetRJ, acreditamos que uma boa pizza é mais do que apenas uma refeição; é um
+                        momento de prazer, de compartilhar e de celebrar a vida.
+                        Venha nos visitar e descubra por que somos a escolha preferida de quem ama pizza de verdade.
+                        Venha viver essa experiência conosco!
+                    </p>
+                </div>
+                <!-- Imagem ao lado -->
+                <div class="col-lg-6 col-md-12 img-cozinha">
+                    <img src="./img/cozinha-pizza.jpg" alt="Cozinha de pizza" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Cardápio-->
+    <section class="cardapio" id="cardapio">
+        <div class="container">
+            <h2 class="section-title">Cardápio</h2>
+            <div class="itens-cardapio">
+
+                <div class="card">
+                    <img src="./img/pizza-frango.jpg" alt="Pizza de Frango" class="card-img">
+                    <div class="info">
+                        <h3 class="pizza-name">Frango com Catupiry</h3>
+                        <h4>Pequena <span>R$35,00</span></h4>
+                        <h4>Média <span>R$45,00</span></h4>
+                        <h4>Grande <span>R$65,00</span></h4>
+                        <a href="https://wa.me/5511999999999" class="btn-pedir" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/pizza-calabresa.jpg" alt="Pizza de Calabresa" class="card-img">
+                    <div class="info">
+                        <h3 class="pizza-name">Calabresa</h3>
+                        <h4>Pequena <span>R$35,00</span></h4>
+                        <h4>Média <span>R$45,00</span></h4>
+                        <h4>Grande <span>R$65,00</span></h4>
+                        <a href="https://wa.me/5511999999999" class="btn-pedir" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/pizza-portuguesa.jpg" alt="Pizza Portuguesa" class="card-img">
+                    <div class="info">
+                        <h3 class="pizza-name">Portuguesa</h3>
+                        <h4>Pequena <span>R$35,00</span></h4>
+                        <h4>Média <span>R$45,00</span></h4>
+                        <h4>Grande <span>R$65,00</span></h4>
+                        <a href="https://wa.me/5511999999999" class="btn-pedir" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/pizza-queijo.jpg" alt="Pizza Queijo" class="card-img">
+                    <div class="info">
+                        <h3 class="pizza-name">Muçarela</h3>
+                        <h4>Pequena <span>R$35,00</span></h4>
+                        <h4>Média <span>R$45,00</span></h4>
+                        <h4>Grande <span>R$65,00</span></h4>
+                        <a href="https://wa.me/5511999999999" class="btn-pedir" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/pizza-margherita.jpg" alt="Pizza Margherita" class="card-img">
+                    <div class="info">
+                        <h3 class="pizza-name">Margherita</h3>
+                        <h4>Pequena <span>R$35,00</span></h4>
+                        <h4>Média <span>R$45,00</span></h4>
+                        <h4>Grande <span>R$65,00</span></h4>
+                        <a href="https://wa.me/5511999999999" class="btn-pedir" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/pizza-brigadeiro.jpg" alt="Pizza Brigadeiro" class="card-img">
+                    <div class="info">
+                        <h3 class="pizza-name">Brigadeiro</h3>
+                        <h4>Pequena <span>R$35,00</span></h4>
+                        <h4>Média <span>R$45,00</span></h4>
+                        <h4>Grande <span>R$65,00</span></h4>
+                        <a href="https://wa.me/5511999999999" class="btn-pedir" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/pizza-confete.jpg" alt="Pizza Confete" class="card-img">
+                    <div class="info">
+                        <h3 class="pizza-name">Confete</h3>
+                        <h4>Pequena <span>R$35,00</span></h4>
+                        <h4>Média <span>R$45,00</span></h4>
+                        <h4>Grande <span>R$65,00</span></h4>
+                        <a href="https://wa.me/5511999999999" class="btn-pedir" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/pizza-churros.jpg" alt="Pizza Confete" class="card-img">
+                    <div class="info">
+                        <h3 class="pizza-name">Churros</h3>
+                        <h4>Pequena <span>R$35,00</span></h4>
+                        <h4>Média <span>R$45,00</span></h4>
+                        <h4>Grande <span>R$65,00</span></h4>
+                        <a href="https://wa.me/5511999999999" class="btn-pedir" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Pedir agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--localização-->
+    <section class="mapa" id="mapa"> 
+        <div class="container">
+            <h2 class="section-title">Endereço</h2>
+            <div class="cards-container">
+                <!-- Card 1: Sede Administrativa -->
+                <div class="card-mapa">
+                    <h3>Sede Administrativa</h3>
+                    <p><strong>Endereço:</strong> Rua Fictícia, 123, Tijuca, Rio de Janeiro</p>
+                    <p><strong>Telefone:</strong> (21) 1234-5678</p>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.215442229715!2d-43.23443278502984!3d-22.937158384993867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e33a665b1fb%3A0x374bc43436c96b16!2sTijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1sen!2sbr!4v1690111123456"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            
+                <!-- Card 2: Filial Copacabana -->
+                <div class="card-mapa">
+                    <h3>Filial Copacabana</h3>
+                    <p><strong>Endereço:</strong> Avenida Atlântica, 456, Copacabana, Rio de Janeiro</p>
+                    <p><strong>Telefone:</strong> (21) 2345-6789</p>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.215442229715!2d-43.17943278502984!3d-22.969158384993867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f33a665b1fb%3A0x374bc43436c96b16!2sCopacabana%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1sen!2sbr!4v1690111234567"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            
+                <!-- Card 3: Filial Méier -->
+                <div class="card-mapa">
+                    <h3>Filial Méier</h3>
+                    <p><strong>Endereço:</strong> Rua Dias da Cruz, 789, Méier, Rio de Janeiro</p>
+                    <p><strong>Telefone:</strong> (21) 3456-7890</p>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.215442229715!2d-43.27943278502984!3d-22.899158384993867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f33a665b1fb%3A0x374bc43436c96b16!2sMéier%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1sen!2sbr!4v1690111345678"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!--contatos-->
+
+    <section class="contatos" id="contatos">
+        <div class="contato-info">
+            <a href="#sobrenos" class="link-sobre-nos">
+                <h1><strong>Sobre Nós</strong></h1>
+            </a>
+            <a href="#cardapio" class="link-sobre-nos">
+                <h1><strong>Cardápio</strong></h1>
+            </a>
+            <a href="#mapa" class="link-sobre-nos">
+                <h1><strong>Endereço</strong></h1>
+            </a>
+        </div>
+
+
+        <div class="redes-sociais-container">
+            <h2><strong>Siga-nos</strong></h2>
+            <div class="redes-sociais">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/yourphonenumber" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <a href="https://api.whatsapp.com/send?phone=55219976916789&text=MENSAGEM" target="_blank" class="whatsapp-float" aria-label="WhatsApp Chat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <footer>
+        <h4>© 2024 GrupoADS. Todos os direitos reservados.</h4>
+    </footer>
+    
+
+
+
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_DE_API&callback=initMap" async defer></script>
+</body>
+
+</html>
